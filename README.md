@@ -12,9 +12,9 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 ## *Week 2* Application Features
 
-<a href="https://www.loom.com/share/4c237640712e4ae98aa00c925db76cb1">
-    <p>Private Video - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/placeholders/private-video.gif">
+<a href="https://www.loom.com/share/854e6553eb0b49a78fc756c3dd7c50a9">
+    <p>Loom Message - 20 June 2023 - Watch Video</p>
+    <img style="max-width:300px;" src="null">
   </a>
 
 
