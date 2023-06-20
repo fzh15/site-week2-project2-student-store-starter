@@ -1,0 +1,25 @@
+.product-card {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  width: 250px;
+  height: 225px;
+}
+
+.product-card img {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  border-bottom: 50px;
+
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-description {
+  font-weight: bold;
+}
