@@ -1,25 +1,25 @@
-import "./SearchButtons.css"
-import React from "react" 
+// import "./SearchButtons.css"
+// import React from "react" 
 
 
 
-function SearchButtons() {
+// function SearchButtons() {
 
 
 
-  return (
-    <div>
+//   return (
+//     <div>
 
-    <button> a </button>;
-    <button> b </button>;
-    <button> c </button>;
-    <button> d </button>;
+//     <button> a </button>;
+//     <button> b </button>;
+//     <button> c </button>;
+//     <button> d </button>;
 
-    </div>
+//     </div>
 
 
-  )
+//   )
 
-}
+// }
 
-export default SearchButtons
+// export default SearchButtons

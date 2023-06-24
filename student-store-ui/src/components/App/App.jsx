@@ -4,7 +4,7 @@ import axios from "axios";
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
-import SubNavbar from "../SubNavbar/SubNavbar";
+import SubNavbar from "../subNavbar/subNavbar";
 import "./App.css";
 import Sidebar from "../Sidebar/Sidebar"
 import ProductDetail from "../ProductDetail/ProductDetail";

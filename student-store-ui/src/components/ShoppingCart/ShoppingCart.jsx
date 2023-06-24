@@ -36,26 +36,26 @@ export default function ShoppingCart({
     };
     
     return (
-      <div className="shopping-cart">
+      <span className="shopping-cart">
       <h2>Shopping Cart</h2>
       <table>
         <thead>
           <tr className="header">
           {/* <tr> defines a row  */}
 
-          <div className="header-row">
+          <th className="header-row">
             <th>Product</th>
             <th>Quantity</th>
             <th>Price</th>
             <th>Subtotal</th>
-            </div>
+            </th>
 
-            <div class="product-row">
-              <span class="flex-2 cart-product-name"></span>
-              <span class="center cart-product-quantity"></span>
-              <span class="center cart-product-price"></span>
-              <span class="center cart-product-subtotal"></span>
-              </div>
+            <th className="product-row">
+              <span className="flex-2 cart-product-name"></span>
+              <span className="center cart-product-quantity"></span>
+              <span className="center cart-product-price"></span>
+              <span className="center cart-product-subtotal"></span>
+              </th>
            
           </tr>
         </thead>
@@ -112,7 +112,7 @@ export default function ShoppingCart({
           </tr>
         </tfoot>
       </table>
-    </div>
+    </span>
   );
 }
 
