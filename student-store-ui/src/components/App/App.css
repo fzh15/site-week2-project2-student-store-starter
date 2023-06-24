@@ -1,4 +1,4 @@
-.app {
+/* .app {
   width: 100%;
   max-width: 100vw;
   height: 100%;
@@ -13,4 +13,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
+
+.summary a{
+text-align: center;}

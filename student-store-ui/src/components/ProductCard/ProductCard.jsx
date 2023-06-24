@@ -12,7 +12,7 @@ const ProductCard = ({product, productId, quantity, handleAddItemToCart, handleR
     // make sure to ptu all props in { } when theres multiple 
 
 
-    console.log("ProductCard", product)
+    // console.log("ProductCard", product)
 
 return(
 

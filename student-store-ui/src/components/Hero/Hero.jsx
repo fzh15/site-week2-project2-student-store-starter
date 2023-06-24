@@ -8,6 +8,12 @@ export default function Hero() {
         <div className="intro">
           <h1>Welcome!</h1>
           <h1>Find Your Merch!</h1>
+        <div className="hero-img">
+          <img
+            src="https://codepath-student-store-demo.surge.sh/assets/student_store_icon.18e5d61a.svg"
+            alt="Hero"
+          />
+        </div>
         </div>
         <div className="content">
           <h3>
@@ -16,13 +22,6 @@ export default function Hero() {
           </h3>
         </div>
 
-        <div className="hero-img">
-\
-          <img
-            src="https://codepath-student-store-demo.surge.sh/assets/student_store_icon.18e5d61a.svg"
-            alt="Hero"
-          />
-        </div>
       </div>
     </div>
   );

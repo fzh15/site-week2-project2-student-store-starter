@@ -1,0 +1,60 @@
+.sidebar-open {
+    width: 400px;
+    background-color:purple;
+    height: 100vh;
+    padding: 20px;
+    transition:  0.5s all;
+    position: fixed;
+    z-index: 3;
+  }
+  
+
+  .sidebar-closed {
+background-color: pink; 
+height: 100vh;
+width: 300px;
+z-index: 3;
+position: fixed;
+left: -300px;;
+/* transition: transform 0.5s all; */
+
+}
+  
+ .toggle-button {
+    position: fixed;
+    z-index: 4;
+    color: white;
+    background-color: purple;
+    /* margin-bottom: 10px; */
+  }
+ 
+  /* .shopping-cart {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-form label {
+    margin-bottom: 10px;
+  }
+  
+  .checkout-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .checkout-form input[type="submit"]:hover {
+    background-color: #45a049;
+  } */ 

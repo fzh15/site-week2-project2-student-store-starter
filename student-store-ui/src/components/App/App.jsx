@@ -4,14 +4,18 @@ import axios from "axios";
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
+import SubNavbar from "../SubNavbar/SubNavbar";
 import "./App.css";
 import Sidebar from "../Sidebar/Sidebar"
 import ProductDetail from "../ProductDetail/ProductDetail";
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
 // import { Link } from "react-router-dom"
 
 export default function App() {
   const [products, setProducts] = useState([]);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const [shoppingCart, setShoppingCart] = useState([])
+  //object thta does id, name then ++1 or --1
   useEffect((products) => {
     axios
       .get("https://codepath-store-api.herokuapp.com/store")
@@ -21,37 +25,98 @@ export default function App() {
 
         console.log(response.data.products)
         setProducts(response.data.products)
+        //the products might refreshing setShopingCart instead setPro
       
       }
         // })
       // .catch.error(error);
       );
     }, [])
+// const 
+  const handleAddItemToCart  = (product) => {
+  
+  // make a function to add when nothing is there 
+  let ItemInCart = shoppingCart?.find(item =>item.id === product.id)
+  //looks to shopingcart if item in cart update item 
+    let updatedCart 
+    if(ItemInCart){
+ updatedCart = shoppingCart.map((item) => {
+      if (item.id === product.id) {
+        return {
+          ...item,
+          count: item.count + 1,
+        };
+      }
+      return item;
+    });
+    setShoppingCart(updatedCart);
+    console.log("updated card", updatedCart)
+  } 
+  else{
 
-  const handleAddItemToCart = async (event) => {
-    event.preventDefault();
-    setProducts(event.target.value)
-  };
+    let NewItem = {
+      id: product.id,
+      nmae: product.name,
+      price: product.price,
+      count: 1
+    };
+    updatedCart = [...shoppingCart, NewItem]
+    setShoppingCart(updatedCart)
+    //adds product to cart when empty
 
-  const handleRemoveItemToCart = async (event) => {
-   event.preventDefault();
-    setProducts(event.target.value)
+  }
+}
 
+//pass the product through the handleRemove function
+
+const handleRemoveItemToCart = (product) => {
+  setShoppingCart((previousCart) => {
+    //uses the 
+    const existingItemIndex = previousCart.findIndex((item) => item.id === product.id);
+    if (existingItemIndex === -1) return previousCart; // Item not found in cart
+    const updatedCart = [...previousCart];
+    const existingItem = updatedCart[existingItemIndex];
+    // If the quantity is more than 1, decrement it. Otherwise, remove the item from the cart.
+    if (existingItem.count > 1) {
+      existingItem.count -= 1;
+    } else {
+      updatedCart.splice(existingItemIndex, 1);
+    }
+    return updatedCart;
+  });
+};
+  const handleOnToggle = async (event) => {
+    console.log("hi")
+    setIsOpen(!isOpen)
   };
 
   return (
     <div className="app">
       <Router>
         <main>
-          {/* YOUR CODE HERE! */}
+         
 
           <Link to="/"> </Link>
           <Link to="/products/:productId"></Link>
       
 
+          <Sidebar 
+            products={products}           
+            // CheckoutForm = {CheckoutForm} 
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            // handleOnCheckoutFormChange= {handleOnCheckoutFormChange}
+            // OnSubmit= {handleOnSubmitCheckoutForm}
+            handleOnToggle={handleOnToggle}
+            shoppingCart={shoppingCart}
+              CheckoutForm={CheckoutForm}
+              setShoppingCart= {setShoppingCart}
+
+          />
           <Navbar />
           <Hero />
-          <Sidebar/>
+          {/* <CheckoutForm/> */}
+          <SubNavbar/>
 
           <Routes>
             <Route path="/" element={<Home 
@@ -65,18 +130,14 @@ export default function App() {
             ></Route>
 
             
-
-
-            {/* how to know whento use link to or route oath element */}
-
-            {/*  - anything else should render the NotFound component?? */}
+    
           </Routes>
 <br>
 </br>
-           <div class="About" id="About">
+           <div className="About" id="About">
                  <h3> About </h3>
-                      <div class="summary">
-                            <div class="text">
+                      <div className="summary">
+                            <div className="a">
 
                                <p> The codepath student store 
                                                       offers great products at great 
@@ -101,6 +162,11 @@ export default function App() {
                         <div id="Contact" name="Contact" >
                                 <div id="content">
                                   <h3>Contact Us</h3>
+                                  <p> Email: fafoda@salesforce.com</p>
+                                  <p> Number: XXX-XXX-XXXX</p>
+
+
+
 
 
 
@@ -132,9 +198,6 @@ export default function App() {
     </div>
 
 
-  );
+  )
 }
-
-
-
 

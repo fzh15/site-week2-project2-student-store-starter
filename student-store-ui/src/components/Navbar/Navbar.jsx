@@ -15,47 +15,47 @@ export default function Navbar() {
        
 
 
-                  <div className = "socials">
-                            <a href = "hyperlink for insta">
-                                  <img src = "https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt = "instagram logo" ></img> </a>
-                                  
-                              <a href = "hyperlink for twitter">
-
-                                  <img src = "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt = "twitter logo" ></img> </a>
-
-                              <a href = "hyperlink for meta">
-
-                                  <img src = "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-facebook-social-media-icon-png-image_6315968.png" alt = "meta logo" ></img> </a>
                    </div>
-          </div>
+                         <div className = "socials">
+                                  <a href = "hyperlink for insta">
+                                        <img src = "https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" alt = "instagram logo" ></img> </a>
+                                        
+                                    <a href = "hyperlink for twitter">
 
-            <ul className="links">
-                      <li> 
-                        <a href="/">Home</a>
-                      </li>
+                                        <img src = "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt = "twitter logo" ></img> </a>
 
-                      <li> 
-                         <a href="/#About">About</a>
-                       </li>
+                                    <a href = "hyperlink for meta">
 
-              <li> 
-                 <a href="/#Contact">Contact Us </a>
-              </li>
-              
+                                        <img src = "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-facebook-social-media-icon-png-image_6315968.png" alt = "meta logo" ></img> </a>
+                         </div>
 
-              <li> 
-                 <a href="/#Buy-Now">Buy Now </a>
-              </li>
+                          <ul className="links">
+                                    <li> 
+                                      <a href="/">Home</a>
+                                    </li>
+
+                                    <li> 
+                                      <a href="/#About">About</a>
+                                    </li>
+
+                            <li> 
+                              <a href="/#Contact">Contact Us </a>
+                            </li>
+                            
+
+                            <li> 
+                              <a href="/#Buy-Now">Buy Now </a>
+                            </li>
 
 
-            </ul>
+                          </ul>
 
 
-            </div>
+                   </div>
  
 
 
-          </div>
+        </div>
     </nav>
   )}
   
