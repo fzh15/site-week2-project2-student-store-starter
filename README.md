@@ -28,6 +28,7 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 ### Stretch Features
 
+<<<<<<< HEAD
 - [ x] Users can click to expand the shopping cart in the left navigation.
 - [x ] Users can click the '+' button on a product cart to increment that product in the shopping cart.
 - [x ] Users can click the '-' button on a product cart to decrement that product in the shopping cart.
@@ -46,9 +47,10 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 ### Core Features
 
 - [x ] User can click to expand the shopping cart in the left navigation.
-- [ x] Users can click the '+' button on a product cart to increment that product in the shopping cart.
+- [x ] Users can click the '+' button on a product cart to increment that product in the shopping cart.
 - [ x] Users can click the '-' button on a product cart to decrement that product in the shopping cart. If the count is zero, the product should be removed from the cart.
-- [x ] The shopping cart displays a table of products, quantities, subtotal, tax, and total.
+- [ x] The shopping cart displays a table of products, quantities, subtotal, tax, and total.
+>>>>>>> 79c04af5c6e3f44fe9d7ffc131047b2571c53111
 - [x ] Users can checkout, and receive a receipt confirming their purchase.
 
 ### Stretch Features
