@@ -58,7 +58,7 @@ display: flex;
     }
     
     tr.product-row td {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid white;
     }
     
     td.cart-product-name {
@@ -77,7 +77,7 @@ display: flex;
     }
     
     tfoot.product-total td {
-        border-top: 1px solid #ccc;
+        border-top: 1px solid white;
         padding-top: 10px;
     }
     

@@ -49,7 +49,7 @@ export default function Sidebar({
   return (
     <>
       <button className="toggle-button" onClick={() => handleOnToggle()}>
-        |||
+      🛒Cart🛒
       </button>
       <section className={`sidebar-${isOpen ? "open" : "closed"}`}>
         <div>

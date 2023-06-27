@@ -115,9 +115,14 @@ const CheckoutForm = ({
       <h2>Checkout</h2>
       {isSubmitted ? (
         <div>
-          <p>Thank you</p>
           <p>Name: {name}</p>
           <p>Email: {email}</p>
+          <p>Thank you! </p>
+
+
+
+
+          
         </div>
       ) : (
         <form onSubmit={handleSubmitForm}>
