@@ -1,5 +1,5 @@
 .sidebar-open {
-    width: 400px;
+    width: 450px;
     background-color:purple;
     height: 100vh;
     padding: 20px;
@@ -28,33 +28,4 @@ left: -300px;;
     /* margin-bottom: 10px; */
   }
  
-  /* .shopping-cart {
-    margin-bottom: 20px;
-  }
   
-  .checkout-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .checkout-form label {
-    margin-bottom: 10px;
-  }
-  
-  .checkout-form input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .checkout-form input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .checkout-form input[type="submit"]:hover {
-    background-color: #45a049;
-  } */ 

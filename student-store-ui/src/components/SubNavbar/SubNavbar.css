@@ -1,0 +1,29 @@
+
+
+.subnavbar {
+    background-color: purple;
+    padding: 10px;
+  }
+  
+  .subnavbar-list {
+    display: flex;
+    justify-content: center;
+    color: purple;
+
+  }
+  
+  .subnavbar__item {
+    border: none;
+    background: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .subnavbar__item.active {
+    font-weight: bold;
+    color: white;
+  }
+  

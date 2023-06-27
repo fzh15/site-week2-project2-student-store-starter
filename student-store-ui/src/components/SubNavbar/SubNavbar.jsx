@@ -52,7 +52,7 @@
                             // }
                             
                             // export default subNavbar
- import "./SubNavbar.css"
+import "./SubNavbar.css"
 import React, { useState } from 'react';
                             
 const Subnavbar = ({ handleFilter }) => {
@@ -63,34 +63,34 @@ const handleCategoryClick = (category) => {
   };
 
   return (
-    <nav className="subnavbar">
-      <ul className="subnavbar__list">
-        <li
+    <div className="subnavbar">
+      <div className="subnavbar-list">
+        <button
           className={`subnavbar__item ${activeCategory === 'allcategories' ? 'active' : ''}`}
           onClick={() => handleCategoryClick('allcategories')}
         >
           All Categories
-        </li>
-        <li
+        </button>
+        <button
           className={`subnavbar__item ${activeCategory === 'clothing' ? 'active' : ''}`}
           onClick={() => handleCategoryClick('clothing')}
         >
           Clothing
-        </li>
-        <li
+        </button>
+        <button
           className={`subnavbar__item ${activeCategory === 'food' ? 'active' : ''}`}
           onClick={() => handleCategoryClick('food')}
         >
           Food
-        </li>
-        <li
+        </button>
+        <button
           className={`subnavbar__item ${activeCategory === 'tech' ? 'active' : ''}`}
           onClick={() => handleCategoryClick('tech')}
         >
           Tech
-        </li>
-      </ul>
-    </nav>
+        </button>
+      </div>
+    </div>
   );
 };
 

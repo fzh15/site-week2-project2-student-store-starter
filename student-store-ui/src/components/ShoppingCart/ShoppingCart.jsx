@@ -37,21 +37,21 @@ export default function ShoppingCart({
     
     return (
       <span className="shopping-cart">
-      <h2>Shopping Cart</h2>
+      <h2>Shopping Cart </h2>
       <table>
         <thead>
           <tr className="header">
           {/* <tr> defines a row  */}
 
           <th className="header-row">
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Subtotal</th>
+            <th>Product</th> <br></br>
+            <th>Quantity</th> <br></br>
+            <th>Price</th> <br></br>
+            <th>Subtotal</th> <br></br>
             </th>
 
             <th className="product-row">
-              <span className="flex-2 cart-product-name"></span>
+              <span className="flex-2 cart-product-name"></span> 
               <span className="center cart-product-quantity"></span>
               <span className="center cart-product-price"></span>
               <span className="center cart-product-subtotal"></span>
@@ -98,17 +98,15 @@ export default function ShoppingCart({
            {/* <td> is a table cell */}
             <td colSpan="3">Subtotal:</td>
             <td>${calculateTotalPrice().toFixed(2)}</td>
-            <td></td>
+            
           </tr>
           <tr className="receipt-taxes">
             <td colSpan="3">Tax:</td>
             <td>${(calculateTotalPrice() - calculateTotalQuantity()).toFixed(2)}</td>
-            <td></td>
           </tr>
           <tr className="receipt-total">
             <td colSpan="3">Total:</td>
             <td>${calculateTotalPrice().toFixed(2)}</td>
-            <td></td>
           </tr>
         </tfoot>
       </table>
